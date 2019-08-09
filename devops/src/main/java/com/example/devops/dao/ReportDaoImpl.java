@@ -13,6 +13,8 @@ import com.example.devops.beans.Issue;
 @Repository
 public class ReportDaoImpl implements ReportDao {
 
+	private String serverUrl="http://localhost:9000/";
+	
 	@Autowired
 	private RestTemplate restTemplate;
 	
@@ -30,7 +32,7 @@ public class ReportDaoImpl implements ReportDao {
 
 	@Override
 	public int getBugs(String language) {
-		final String url = "http://localhost:9000/api/issues/search?languages=java&types=BUG";
+		final String url = serverUrl+"api/issues/search?languages=java&types=BUG";
 		ResponseEntity<String> response
 		  = restTemplate.getForEntity(url, String.class);
 		try {
