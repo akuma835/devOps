@@ -29,6 +29,7 @@ public class ReportDaoImpl implements ReportDao {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
 
 	@Override
 	public int getBugs(String language) {
