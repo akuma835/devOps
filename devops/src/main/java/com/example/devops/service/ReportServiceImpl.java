@@ -21,7 +21,7 @@ public class ReportServiceImpl implements ReportService {
 		
 		Report report = new Report();
 		report.setDate(LocalDate.now());
-		TypeCount typeCount = getTypeCounts(language);
+		TypeCount typeCount = getTypeCount(language);
 		report.setTypeCount(typeCount);
 		SeverityCount severityCount = getSeverityCount(language);
 		report.setSeverityCount(severityCount);
@@ -31,18 +31,32 @@ public class ReportServiceImpl implements ReportService {
 	}
 
 	private SeverityCount getSeverityCount(String language) {
-		// TODO Auto-generated method stub
-		return null;
+		SeverityCount severityCount = new SeverityCount();
+		int minorCount = reportdao.getMinor(language);
+		int criticalCount = reportdao.getCritical(language);
+		int infoCount = reportdao.getInfo(language);
+		int majorCount = reportdao.getMajor(language);
+		
+		severityCount.setMinorCount(minorCount);
+		severityCount.setCriticalCount(criticalCount);
+		severityCount.setInfoCount(infoCount);
+		severityCount.setMajorCount(majorCount);
+		
+		return severityCount;
 	}
 
-	private TypeCount getTypeCounts(String language) {
+	private TypeCount getTypeCount(String language) {
 		TypeCount typeCount= new TypeCount();
 		int bugs = reportdao.getBugs(language);
 		int vulnerabilityCount= reportdao.getVulnerability(language);
-		//other property 
+		int codeSmell = reportdao.getCodeSmell(language);
+		int securityHotspot = reportdao.getHotspot(language);
+ 
 		typeCount.setBugsCount(bugs);
 		typeCount.setVulnerabilityCount(vulnerabilityCount);
-		//assign other counts
+		typeCount.setCodeSmell(codeSmell);
+		typeCount.setSecurityHotspot(securityHotspot);
+		
 		return typeCount;
 	}
 

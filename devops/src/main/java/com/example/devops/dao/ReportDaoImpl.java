@@ -49,20 +49,115 @@ public class ReportDaoImpl implements ReportDao {
 
 	@Override
 	public int getVulnerability(String language) {
-		// TODO Auto-generated method stub
-		return 0;
+		final String url = "http://localhost:9000/api/issues/search?languages=java&types=Vulnerability";
+		ResponseEntity<String> response
+		  = restTemplate.getForEntity(url, String.class);
+		try {
+			jsonObject = (JSONObject) parser.parse(response.getBody());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		System.out.println(response.getBody());
+		long count = (long) jsonObject.get("total");
+		
+		return (int)count;
+		
 	}
 
 	@Override
 	public int getCodeSmell(String language) {
-		// TODO Auto-generated method stub
-		return 0;
+		final String url = "http://localhost:9000/api/issues/search?languages=java&types=CodeSmell";
+		ResponseEntity<String> response
+		  = restTemplate.getForEntity(url, String.class);
+		try {
+			jsonObject = (JSONObject) parser.parse(response.getBody());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		System.out.println(response.getBody());
+		long count = (long) jsonObject.get("total");
+		
+		return (int)count;
 	}
 
 	@Override
 	public int getHotspot(String language) {
-		// TODO Auto-generated method stub
-		return 0;
+		final String url = "http://localhost:9000/api/issues/search?languages=java&types=Hotspot";
+		ResponseEntity<String> response
+		  = restTemplate.getForEntity(url, String.class);
+		try {
+			jsonObject = (JSONObject) parser.parse(response.getBody());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		System.out.println(response.getBody());
+		long count = (long) jsonObject.get("total");
+		
+		return (int)count;
+	}
+
+	@Override
+	public int getMinor(String language) {
+		final String url = "http://localhost:9000/api/issues/search?languages=java&severities=Minor";
+		ResponseEntity<String> response
+		  = restTemplate.getForEntity(url, String.class);
+		try {
+			jsonObject = (JSONObject) parser.parse(response.getBody());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		System.out.println(response.getBody());
+		long count = (long) jsonObject.get("total");
+		
+		return (int)count;
+	}
+
+	@Override
+	public int getCritical(String language) {
+		final String url = "http://localhost:9000/api/issues/search?languages=java&severities=Critical";
+		ResponseEntity<String> response
+		  = restTemplate.getForEntity(url, String.class);
+		try {
+			jsonObject = (JSONObject) parser.parse(response.getBody());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		System.out.println(response.getBody());
+		long count = (long) jsonObject.get("total");
+		
+		return (int)count;
+	}
+
+	@Override
+	public int getInfo(String language) {
+		final String url = "http://localhost:9000/api/issues/search?languages=java&severities=Info";
+		ResponseEntity<String> response
+		  = restTemplate.getForEntity(url, String.class);
+		try {
+			jsonObject = (JSONObject) parser.parse(response.getBody());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		System.out.println(response.getBody());
+		long count = (long) jsonObject.get("total");
+		
+		return (int)count;
+	}
+
+	@Override
+	public int getMajor(String language) {
+		final String url = "http://localhost:9000/api/issues/search?languages=java&severities=Major";
+		ResponseEntity<String> response
+		  = restTemplate.getForEntity(url, String.class);
+		try {
+			jsonObject = (JSONObject) parser.parse(response.getBody());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		System.out.println(response.getBody());
+		long count = (long) jsonObject.get("total");
+		
+		return (int)count;
 	}
 
 	
