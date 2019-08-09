@@ -19,7 +19,7 @@ public class ReportController {
 	private ReportService reportService;
 
 	@GetMapping(value = "/report/{language}", produces = "application/json")
-	public Report removeStudent(@PathVariable("language") String language) {
+	public Report getReport(@PathVariable("language") String language) {
 		if (null==language) {
 			throw new ProgramException(ErrorMessages.MESSAGE3);
 		}
