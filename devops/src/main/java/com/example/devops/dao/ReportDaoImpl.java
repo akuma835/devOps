@@ -21,7 +21,7 @@ import com.example.devops.exception.ProgramException;
 @Repository
 public class ReportDaoImpl implements ReportDao {
 
-	private String serverUrl = "http://localhost:9000/";
+	private String serverUrl = "http://10.236.246.25:9000/";
 
 	@Autowired
 	private RestTemplate restTemplate;

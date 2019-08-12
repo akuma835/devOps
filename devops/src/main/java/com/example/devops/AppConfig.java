@@ -22,10 +22,10 @@ public class AppConfig {
 		return new RestTemplate();
 	}
 
-	@Bean
-	public HttpHeaders getHttpHeaders() {
-		return new HttpHeaders();
-	}
+//	@Bean
+//	public HttpHeaders getHttpHeaders() {
+//		return new HttpHeaders();
+//	}
 
 	
 	@Bean
