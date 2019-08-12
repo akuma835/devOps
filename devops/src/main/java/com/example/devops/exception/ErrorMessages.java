@@ -3,7 +3,7 @@ package com.example.devops.exception;
  * 
  * @author Amit Kumar
  * 
- * Predifined Exception Messages
+ * Predefined Exception Messages
  *
  */
 public class ErrorMessages {

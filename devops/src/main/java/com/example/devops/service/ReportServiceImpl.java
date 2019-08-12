@@ -10,12 +10,22 @@ import com.example.devops.beans.SeverityCount;
 import com.example.devops.beans.TypeCount;
 import com.example.devops.dao.ReportDao;
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ * Service Implementation ReportServiceImpl
+ */
 @Service
 public class ReportServiceImpl implements ReportService {
 
 	@Autowired
 	private ReportDao reportdao;
 
+	/**
+	 * @param takes String language
+	 * Returns Object report 
+	 */
 	@Override
 	public Report getReport(String language) {
 		
@@ -31,6 +41,10 @@ public class ReportServiceImpl implements ReportService {
 		return report;
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns Object severityCount
+	 */
 	private SeverityCount getSeverityCount(String language) {
 		SeverityCount severityCount = new SeverityCount();
 		
@@ -49,6 +63,10 @@ public class ReportServiceImpl implements ReportService {
 		return severityCount;
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns Object typeCount
+	 */
 	private TypeCount getTypeCount(String language) {
 		TypeCount typeCount= new TypeCount();
 		

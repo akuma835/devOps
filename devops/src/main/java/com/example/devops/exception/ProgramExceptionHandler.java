@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-/***
+/**
  * 
  * @author Amit Kumar
  * 
- *         Exception Handler For Exception
+ * Exception Handler For Custom Exception
  *
  */
 @ControllerAdvice
@@ -51,6 +51,11 @@ public class ProgramExceptionHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<>(exception, statusCode);
 	}
 
+	/**
+	 * 
+	 * @param webRequest
+	 * @return JSON of CustomInvalidUrl JSON
+	 */
 	@ResponseStatus(value=HttpStatus.NOT_FOUND)
 	@ExceptionHandler(InvalidURL.class)
 	public final ResponseEntity<InvalidURL> notFound(WebRequest webRequest) {

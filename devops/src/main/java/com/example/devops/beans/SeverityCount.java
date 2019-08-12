@@ -1,5 +1,12 @@
 package com.example.devops.beans;
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ * Bean Class SeverityCount
+ *
+ */
 public class SeverityCount {
 	private int blockerCount;
 	private int minorCount;
@@ -8,7 +15,9 @@ public class SeverityCount {
 	private int infoCount;
 	
 	
-	
+	/**
+	 * Default Constructor
+	 */
 	public SeverityCount() {
 	}
 	public int getBlockerCount() {

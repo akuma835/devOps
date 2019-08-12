@@ -7,6 +7,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ * Bean Class AppConfig
+ *
+ */
 @Configuration
 public class AppConfig {
 

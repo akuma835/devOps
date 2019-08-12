@@ -11,6 +11,13 @@ import org.springframework.web.client.RestTemplate;
 import com.example.devops.exception.ErrorMessages;
 import com.example.devops.exception.ProgramException;
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ * Dao Impl ReportDaoImpl
+ *
+ */
 @Repository
 public class ReportDaoImpl implements ReportDao {
 
@@ -25,6 +32,10 @@ public class ReportDaoImpl implements ReportDao {
 	@Autowired
 	private JSONParser parser;
 
+	/**
+	 * @param takes String language
+	 * Returns integer count
+	 */
 	@Override
 	public int getBugs(String language) {
 		final String url = serverUrl + "api/issues/search?types=BUG&languages=" + language;
@@ -33,6 +44,10 @@ public class ReportDaoImpl implements ReportDao {
 		return count;
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns integer count
+	 */
 	@Override
 	public int getVulnerability(String language) {
 		final String url = serverUrl + "api/issues/search?types=VULNERABILITY&languages=" + language;
@@ -42,6 +57,10 @@ public class ReportDaoImpl implements ReportDao {
 
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns integer count
+	 */
 	@Override
 	public int getCodeSmell(String language) {
 		final String url = serverUrl + "api/issues/search?types=CODE_SMELL&languages=" + language;
@@ -50,6 +69,10 @@ public class ReportDaoImpl implements ReportDao {
 		return count;
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns integer count
+	 */
 	@Override
 	public int getHotspot(String language) {
 		final String url = serverUrl + "api/issues/search?types=SECURITY_HOTSPOT&languages=" + language;
@@ -58,6 +81,10 @@ public class ReportDaoImpl implements ReportDao {
 		return count;
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns integer count
+	 */
 	@Override
 	public int getMinor(String language) {
 		final String url = serverUrl + "api/issues/search?severities=MINOR&languages=" + language;
@@ -66,6 +93,10 @@ public class ReportDaoImpl implements ReportDao {
 		return count;
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns integer count
+	 */
 	@Override
 	public int getCritical(String language) {
 		final String url = serverUrl + "api/issues/search?severities=CRITICAL&languages=" + language;
@@ -74,6 +105,10 @@ public class ReportDaoImpl implements ReportDao {
 		return count;
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns integer count
+	 */
 	@Override
 	public int getInfo(String language) {
 		final String url = serverUrl + "api/issues/search?severities=INFO&languages=" + language;
@@ -82,6 +117,10 @@ public class ReportDaoImpl implements ReportDao {
 		return count;
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns integer count
+	 */
 	@Override
 	public int getMajor(String language) {
 		final String url = serverUrl + "api/issues/search?severities=MAJOR&languages=" + language;
@@ -90,6 +129,10 @@ public class ReportDaoImpl implements ReportDao {
 		return count;
 	}
 
+	/**
+	 * @param takes String language
+	 * Returns integer count
+	 */
 	@Override
 	public int getBlocker(String language) {
 		final String url = serverUrl + "api/issues/search?severities=BLOCKER&languages=" + language;
@@ -97,7 +140,11 @@ public class ReportDaoImpl implements ReportDao {
 
 		return count;
 	}
-	
+
+	/**
+	 * @param takes String url
+	 * Returns integer count
+	 */
 	private int makeApiRequest(String url) {
 		ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
 		try {

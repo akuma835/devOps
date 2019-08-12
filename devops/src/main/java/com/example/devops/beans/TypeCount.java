@@ -1,5 +1,12 @@
 package com.example.devops.beans;
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ * Bean Class TypeCount
+ *
+ */
 public class TypeCount {
 
 	private int bugsCount;

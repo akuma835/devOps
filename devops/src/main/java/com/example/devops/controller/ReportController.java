@@ -11,6 +11,13 @@ import com.example.devops.exception.ErrorMessages;
 import com.example.devops.exception.ProgramException;
 import com.example.devops.service.ReportService;
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ * Controller ReportController
+ *
+ */
 @CrossOrigin("*")
 @RestController
 public class ReportController {
@@ -18,6 +25,11 @@ public class ReportController {
 	@Autowired
 	private ReportService reportService;
 
+	/**
+	 * 
+	 * @param String language 
+	 * @return report
+	 */
 	@GetMapping(value = "/report/{language}", produces = "application/json")
 	public Report getReport(@PathVariable("language") String language) {
 		if (null==language) {
