@@ -14,6 +14,9 @@ public class TypeCount {
 	private int codeSmell;
 	private int securityHotspot;
 
+	/**
+	 * Default Constructor TypeCount
+	 */
 	public TypeCount() {
 
 	}

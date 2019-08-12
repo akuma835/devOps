@@ -33,6 +33,7 @@ public class ReportDaoImpl implements ReportDao {
 	private JSONParser parser;
 
 	/**
+	 * Method getBugs of DaoImpl
 	 * @param takes String language
 	 * Returns integer count
 	 */
@@ -45,6 +46,8 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	/**
+	 * 
+	 * Method getVulnerability of DaoImpl
 	 * @param takes String language
 	 * Returns integer count
 	 */
@@ -58,6 +61,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	/**
+	 * Method getCodeSmell of DaoImpl
 	 * @param takes String language
 	 * Returns integer count
 	 */
@@ -70,6 +74,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	/**
+	 * Method getHotspot of DaoImpl
 	 * @param takes String language
 	 * Returns integer count
 	 */
@@ -82,6 +87,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	/**
+	 * Method getMinor of DaoImpl
 	 * @param takes String language
 	 * Returns integer count
 	 */
@@ -94,6 +100,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	/**
+	 * Method getCritical of DaoImpl
 	 * @param takes String language
 	 * Returns integer count
 	 */
@@ -106,6 +113,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	/**
+	 * Method getInfo of DaoImpl
 	 * @param takes String language
 	 * Returns integer count
 	 */
@@ -118,6 +126,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	/**
+	 * Method getMajor of DaoImpl
 	 * @param takes String language
 	 * Returns integer count
 	 */
@@ -130,6 +139,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	/**
+	 * Method getBlocker of DaoImpl
 	 * @param takes String language
 	 * Returns integer count
 	 */
@@ -142,6 +152,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	/**
+	 * Method makeApiRequest
 	 * @param takes String url
 	 * Returns integer count
 	 */

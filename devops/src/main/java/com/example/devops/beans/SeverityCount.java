@@ -16,7 +16,7 @@ public class SeverityCount {
 	
 	
 	/**
-	 * Default Constructor
+	 * Default Constructor Severity Count
 	 */
 	public SeverityCount() {
 	}

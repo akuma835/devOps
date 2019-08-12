@@ -1,10 +1,8 @@
 package com.example.devops;
 
-import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpHeaders;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -17,6 +15,10 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class AppConfig {
 
+	/**
+	 * Method getRestTemplate
+	 * @return Object RestTemplate
+	 */
 	@Bean
 	public RestTemplate getRestTemplate() {
 		return new RestTemplate();
@@ -28,10 +30,10 @@ public class AppConfig {
 //	}
 
 	
-	@Bean
-	public JSONObject getJsonObject() {
-		return  new JSONObject(); 
-	}
+	/**
+	 * Method getJsonParser
+	 * @return Parsed JSON 
+	 */
 	@Bean
 	public JSONParser getJsonParser() {
 		return new JSONParser();

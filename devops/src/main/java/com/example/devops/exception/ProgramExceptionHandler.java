@@ -20,6 +20,12 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 @RestController
 public class ProgramExceptionHandler extends ResponseEntityExceptionHandler {
+	/**
+	 * Method handleAllException
+	 * @param e
+	 * @param webRequest
+	 * @return
+	 */
 	@ExceptionHandler(Exception.class)
 	@ResponseStatus(code = HttpStatus.NOT_FOUND)
 	public final ResponseEntity<ErrorMessagePattern> handleAllException(Exception e, WebRequest webRequest) {
@@ -29,8 +35,8 @@ public class ProgramExceptionHandler extends ResponseEntityExceptionHandler {
 
 	}
 
-	/***
-	 * 
+	/**
+	 * Method handleProgramException
 	 * @param Object of Program Exception
 	 * @param webRequest
 	 * @return JSON of CustomErrorpattern JSON
@@ -52,7 +58,7 @@ public class ProgramExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 
 	/**
-	 * 
+	 * Method notFound
 	 * @param webRequest
 	 * @return JSON of CustomInvalidUrl JSON
 	 */

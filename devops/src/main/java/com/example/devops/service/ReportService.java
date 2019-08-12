@@ -11,7 +11,7 @@ import com.example.devops.beans.Report;
  */
 public interface ReportService {
 	/**
-	 * 
+	 * Method getReport of Service
 	 * @param language
 	 * @return Report object
 	 */

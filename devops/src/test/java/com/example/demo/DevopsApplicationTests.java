@@ -17,7 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class DevopsApplicationTests {
 
 	/**
-	 * 
+	 * Default Test Method contextLoads
 	 */
 	@Test
 	public void contextLoads() {

@@ -13,6 +13,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DevopsApplication {
 
+	/**
+	 * Main DevopsApplication
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(DevopsApplication.class, args);
 		System.out.println("Startup Success");

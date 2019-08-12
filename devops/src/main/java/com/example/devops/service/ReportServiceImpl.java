@@ -23,6 +23,7 @@ public class ReportServiceImpl implements ReportService {
 	private ReportDao reportdao;
 
 	/**
+	 * Method getReport of ServiceImpl
 	 * @param takes String language
 	 * Returns Object report 
 	 */
@@ -42,6 +43,7 @@ public class ReportServiceImpl implements ReportService {
 	}
 
 	/**
+	 * Method getSeverityCount of ServiceImpl
 	 * @param takes String language
 	 * Returns Object severityCount
 	 */
@@ -64,6 +66,7 @@ public class ReportServiceImpl implements ReportService {
 	}
 
 	/**
+	 * Method getTypeCount of ServiceImpl
 	 * @param takes String language
 	 * Returns Object typeCount
 	 */

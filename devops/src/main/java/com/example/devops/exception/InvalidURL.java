@@ -28,6 +28,11 @@ public class InvalidURL extends Exception {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+	/**
+	 * Method InvalidURL
+	 * @param errorTitle
+	 * @param message
+	 */
 	public InvalidURL(String errorTitle, String message) {
 		super();
 		this.errorTitle = errorTitle;

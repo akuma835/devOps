@@ -13,7 +13,7 @@ public class ProgramException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 
+	 * Method ProgramException
 	 * @param errorMassage
 	 */
 	public ProgramException(String errorMassage) {
@@ -21,7 +21,7 @@ public class ProgramException extends RuntimeException {
 	}
 
 	/**
-	 * 
+	 * Method ProgramException
 	 * @param errorMessage
 	 * @param httpStatus
 	 */
@@ -30,10 +30,7 @@ public class ProgramException extends RuntimeException {
 		title = httpStatus;
 	}
 
-	/**
-	 * 
-	 * @return title
-	 */
+	
 	public HttpStatus getTitle() {
 		return title;
 	}

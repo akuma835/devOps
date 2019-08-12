@@ -14,6 +14,9 @@ public class Report {
 	private TypeCount typeCount;
 	private LocalDate date;
 
+	/**
+	 * Default Constructor Report
+	 */
 	public Report() {
 	}
 

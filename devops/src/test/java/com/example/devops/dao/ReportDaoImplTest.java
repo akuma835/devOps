@@ -15,7 +15,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
 
 
-
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ *
+ */
 @Configuration
 @ComponentScan(basePackages = { "com.example.devops.dao"})
 class SpringTestContext {
@@ -35,6 +40,13 @@ class SpringTestContext {
 	}
 }
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ * Testing of ReportDaoImpl                                                                                                                                                                                                                                                                                                                                                                                                                       
+ *
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = SpringTestContext.class)
 public class ReportDaoImplTest {
@@ -43,13 +55,19 @@ public class ReportDaoImplTest {
 	private ReportDao reportDao ;
 	
 
-	
+	/**
+	 * Method testBugsCount 
+	 * @param language
+	 */
 	@Test
 	public void testBugsCount() {
 		assertTrue(Integer.valueOf(reportDao.getBugs("java")) instanceof Integer);
 	}
 
-	
+	/**
+	 * Method testVulnerability
+	 * @param language
+	 */
 	@Test
 	public void testVulnerabilityCount() {
 		

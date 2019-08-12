@@ -13,6 +13,13 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.example.devops.beans.Report;
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ * Default Testing
+ *
+ */
 @Configuration
 @ComponentScan(basePackages = { "com.example.devops.service", 
 		"com.example.devops.stub"})
@@ -20,6 +27,13 @@ class SpringTestContext {
 	
 }
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone
+ * Testing of ReportServiceImpl
+ *
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = SpringTestContext.class)
 public class ReportServiceImplTest {
@@ -27,6 +41,9 @@ public class ReportServiceImplTest {
 	@Autowired
 	private ReportService reportService;
 
+	/**
+	 * Method testGetReport
+	 */
 	@Test
 	public void testGetReport() {
 		
@@ -34,6 +51,9 @@ public class ReportServiceImplTest {
 		
 	}
 
+	/**
+	 * Method testGetServerityCount
+	 */
 	@Test
 	public void testGetSeverityCount() {
 		
@@ -43,6 +63,9 @@ public class ReportServiceImplTest {
 		
 	}
 	
+	/**
+	 * Method testGetTypeCount
+	 */
 	@Test
 	public void testGetTypeCount() {
 		

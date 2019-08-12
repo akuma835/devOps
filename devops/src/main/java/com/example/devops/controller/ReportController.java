@@ -26,7 +26,7 @@ public class ReportController {
 	private ReportService reportService;
 
 	/**
-	 * 
+	 * Method getReport
 	 * @param String language 
 	 * @return report
 	 */
