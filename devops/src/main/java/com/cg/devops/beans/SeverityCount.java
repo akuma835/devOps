@@ -1,4 +1,4 @@
-package com.example.devops.beans;
+package com.cg.devops.beans;
 
 public class SeverityCount {
 	private int blockerCount;

@@ -1,6 +1,6 @@
-package com.example.devops.service;
+package com.cg.devops.service;
 
-import com.example.devops.beans.Report;
+import com.cg.devops.beans.Report;
 
 public interface ReportService {
 	public Report getReport(String language);

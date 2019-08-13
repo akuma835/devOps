@@ -1,14 +1,14 @@
-package com.example.devops.service;
+package com.cg.devops.service;
 
 import java.time.LocalDate;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.devops.beans.Report;
-import com.example.devops.beans.SeverityCount;
-import com.example.devops.beans.TypeCount;
-import com.example.devops.dao.ReportDao;
+import com.cg.devops.beans.Report;
+import com.cg.devops.beans.SeverityCount;
+import com.cg.devops.beans.TypeCount;
+import com.cg.devops.dao.ReportDao;
 
 @Service
 public class ReportServiceImpl implements ReportService {

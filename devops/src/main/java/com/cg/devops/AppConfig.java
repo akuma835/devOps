@@ -1,9 +1,10 @@
-package com.example.devops;
+package com.cg.devops;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.client.RestTemplate;
 
@@ -26,6 +27,7 @@ public class AppConfig {
 		return  new JSONObject(); 
 	}
 	@Bean
+	@Scope(scopeName = "")
 	public JSONParser getJsonParser() {
 		return new JSONParser();
 	}

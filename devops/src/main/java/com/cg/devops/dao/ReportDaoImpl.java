@@ -1,15 +1,17 @@
-package com.example.devops.dao;
+package com.cg.devops.dao;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import com.example.devops.exception.ErrorMessages;
-import com.example.devops.exception.ProgramException;
+import com.cg.devops.exception.ErrorMessages;
+import com.cg.devops.exception.ProgramException;
 
 @Repository
 public class ReportDaoImpl implements ReportDao {
@@ -97,18 +99,20 @@ public class ReportDaoImpl implements ReportDao {
 
 		return count;
 	}
-	
+
 	private int makeApiRequest(String url) {
-		ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+		ResponseEntity<String> response = null;
 		try {
+			response = restTemplate.getForEntity(url, String.class);
 			jsonObject = (JSONObject) parser.parse(response.getBody());
-		} catch (ParseException e) {
+		} catch (RestClientException e) {
 			throw new ProgramException(ErrorMessages.MESSAGE2);
+		}
+		catch (ParseException e) {
+			throw new ProgramException(ErrorMessages.MESSAGE4);
 		}
 		long count = (long) jsonObject.get("total");
 		return (int) count;
 	}
-
-	
 
 }

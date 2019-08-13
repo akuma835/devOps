@@ -1,4 +1,4 @@
-package com.example.devops.dao;
+package com.cg.devops.dao;
 
 public interface ReportDao {
 	public int getBugs(String language);
