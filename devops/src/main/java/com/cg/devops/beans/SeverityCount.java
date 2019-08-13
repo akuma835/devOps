@@ -1,6 +1,11 @@
 package com.cg.devops.beans;
 
-public class SeverityCount {
+import java.io.Serializable;
+
+public class SeverityCount implements Serializable {
+	
+
+	private static final long serialVersionUID = 1L;
 	private int blockerCount;
 	private int minorCount;
 	private int majorCount;

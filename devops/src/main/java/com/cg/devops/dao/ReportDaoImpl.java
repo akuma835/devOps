@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import com.cg.devops.exception.ErrorMessages;
+import com.cg.devops.exception.ErrorMessagesUtils;
 import com.cg.devops.exception.ProgramException;
 
 @Repository
@@ -19,7 +19,7 @@ public class ReportDaoImpl implements ReportDao {
 	private String serverUrl = "http://localhost:9000/";
 
 	@Autowired
-	private RestTemplate restTemplate;
+	private  RestTemplate restTemplate;
 
 	@Autowired
 	private JSONObject jsonObject;
@@ -30,74 +30,56 @@ public class ReportDaoImpl implements ReportDao {
 	@Override
 	public int getBugs(final String language) {
 		final String url = serverUrl + "api/issues/search?types=BUG&languages=" + language;
-		final int count = makeApiRequest(url);
-
-		return count;
+		return makeApiRequest(url);
 	}
 
 	@Override
 	public int getVulnerability(final String language) {
 		final String url = serverUrl + "api/issues/search?types=VULNERABILITY&languages=" + language;
-		final int count = makeApiRequest(url);
-
-		return count;
+		return makeApiRequest(url);
 
 	}
 
 	@Override
 	public int getCodeSmell(final String language) {
 		final String url = serverUrl + "api/issues/search?types=CODE_SMELL&languages=" + language;
-		final int count = makeApiRequest(url);
-
-		return count;
+		return makeApiRequest(url);
 	}
 
 	@Override
 	public int getHotspot(final String language) {
 		final String url = serverUrl + "api/issues/search?types=SECURITY_HOTSPOT&languages=" + language;
-		final int count = makeApiRequest(url);
-
-		return count;
+		return makeApiRequest(url);
 	}
 
 	@Override
 	public int getMinor(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=MINOR&languages=" + language;
-		final int count = makeApiRequest(url);
-
-		return count;
+		return makeApiRequest(url);
 	}
 
 	@Override
 	public int getCritical(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=CRITICAL&languages=" + language;
-		final int count = makeApiRequest(url);
-
-		return count;
+		return makeApiRequest(url);
 	}
 
 	@Override
 	public int getInfo(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=INFO&languages=" + language;
-		final int count = makeApiRequest(url);
-
-		return count;
+		return makeApiRequest(url);
 	}
 
 	@Override
 	public int getMajor(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=MAJOR&languages=" + language;
-		final int count = makeApiRequest(url);
-
-		return count;
+		return makeApiRequest(url);
 	}
 
 	@Override
 	public int getBlocker(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=BLOCKER&languages=" + language;
-		final int count = makeApiRequest(url);
-
-		return count;
+		return makeApiRequest(url);
 	}
 
 	private int makeApiRequest(final String url) {
@@ -106,13 +88,12 @@ public class ReportDaoImpl implements ReportDao {
 			response = restTemplate.getForEntity(url, String.class);
 			jsonObject = (JSONObject) parser.parse(response.getBody());
 		} catch (RestClientException e) {
-			throw new ProgramException(ErrorMessages.MESSAGE2);
+			throw new ProgramException(ErrorMessagesUtils.MESSAGE2);
 		}
 		catch (ParseException e) {
-			throw new ProgramException(ErrorMessages.MESSAGE4);
+			throw new ProgramException(ErrorMessagesUtils.MESSAGE4);
 		}
-		long count = (long) jsonObject.get("total");
-		return (int) count;
+		return (int) (long) jsonObject.get("total");
 	}
 
 }

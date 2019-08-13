@@ -17,28 +17,28 @@ public class ReportServiceImpl implements ReportService {
 	private ReportDao reportdao;
 
 	@Override
-	public Report getReport(String language) {
+	public Report getReport(final String language) {
 		
-		Report report = new Report();
+		final Report report = new Report();
 		report.setDate(LocalDate.now());
 		
-		TypeCount typeCount = getTypeCount(language);
+		final TypeCount typeCount = getTypeCount(language);
 		report.setTypeCount(typeCount);
 		
-		SeverityCount severityCount = getSeverityCount(language);
+		final SeverityCount severityCount = getSeverityCount(language);
 		report.setSeverityCount(severityCount);
 
 		return report;
 	}
 
-	private SeverityCount getSeverityCount(String language) {
-		SeverityCount severityCount = new SeverityCount();
+	private SeverityCount getSeverityCount(final String language) {
+		final SeverityCount severityCount = new SeverityCount();
 		
-		int minorCount = reportdao.getMinor(language);
-		int criticalCount = reportdao.getCritical(language);
-		int infoCount = reportdao.getInfo(language);
-		int majorCount = reportdao.getMajor(language);
-		int blockerCount= reportdao.getBlocker(language);
+		final int minorCount = reportdao.getMinor(language);
+		final int criticalCount = reportdao.getCritical(language);
+		final int infoCount = reportdao.getInfo(language);
+		final int majorCount = reportdao.getMajor(language);
+		final int blockerCount= reportdao.getBlocker(language);
 		
 		severityCount.setMinorCount(minorCount);
 		severityCount.setCriticalCount(criticalCount);
@@ -49,13 +49,13 @@ public class ReportServiceImpl implements ReportService {
 		return severityCount;
 	}
 
-	private TypeCount getTypeCount(String language) {
-		TypeCount typeCount= new TypeCount();
+	private TypeCount getTypeCount(final String language) {
+		final TypeCount typeCount= new TypeCount();
 		
-		int bugs = reportdao.getBugs(language);
-		int vulnerabilityCount= reportdao.getVulnerability(language);
-		int codeSmell = reportdao.getCodeSmell(language);
-		int securityHotspot = reportdao.getHotspot(language);
+		final int bugs = reportdao.getBugs(language);
+		final int vulnerabilityCount= reportdao.getVulnerability(language);
+		final int codeSmell = reportdao.getCodeSmell(language);
+		final int securityHotspot = reportdao.getHotspot(language);
 		
  
 		typeCount.setBugsCount(bugs);

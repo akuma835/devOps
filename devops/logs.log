@@ -142,3 +142,21 @@ Consider defining a bean of type 'org.springframework.web.client.RestTemplate' i
 2019-08-13 14:59:07.749  INFO 9516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
 2019-08-13 14:59:14.682  INFO 9516 --- [RMI TCP Connection(55)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2019-08-13 14:59:14.686  INFO 9516 --- [RMI TCP Connection(55)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:15:15.779  INFO 5772 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 5772 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
+2019-08-13 15:15:15.781  INFO 5772 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
+2019-08-13 15:15:15.812  INFO 5772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-13 15:15:15.813  INFO 5772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-13 15:15:16.953  INFO 5772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-08-13 15:15:16.973  INFO 5772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 15:15:16.973  INFO 5772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-13 15:15:17.046  INFO 5772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 15:15:17.047  INFO 5772 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1234 ms
+2019-08-13 15:15:17.274  INFO 5772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:15:17.437  INFO 5772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-13 15:15:17.482  INFO 5772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-13 15:15:17.485  INFO 5772 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 1.993 seconds (JVM running for 2.604)
+2019-08-13 15:15:27.056  INFO 5772 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-13 15:15:27.057  INFO 5772 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-13 15:15:27.061  INFO 5772 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-08-13 15:19:16.909  INFO 5772 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 15:19:16.912  INFO 5772 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

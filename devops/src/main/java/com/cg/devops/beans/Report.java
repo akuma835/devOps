@@ -1,8 +1,11 @@
 package com.cg.devops.beans;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Report {
+public class Report implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private SeverityCount severityCount;
 	private TypeCount typeCount;
 	private LocalDate date;

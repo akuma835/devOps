@@ -1,7 +1,10 @@
 package com.cg.devops.beans;
 
-public class TypeCount {
+import java.io.Serializable;
 
+public class TypeCount implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private int bugsCount;
 	private int vulnerabilityCount;
 	private int codeSmell;

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cg.devops.beans.Report;
-import com.cg.devops.exception.ErrorMessages;
+import com.cg.devops.exception.ErrorMessagesUtils;
 import com.cg.devops.exception.ProgramException;
 import com.cg.devops.service.ReportService;
 
@@ -19,11 +19,11 @@ public class ReportController {
 	private ReportService reportService;
 
 	@GetMapping(value = "/report/{language}", produces = "application/json")
-	public Report getReport(@PathVariable("language") String language) {
+	public Report getReport(@PathVariable("language")final  String language) {
 		if (!language.matches("[a-zA-Z]{1,}")) {
-			throw new ProgramException(ErrorMessages.MESSAGE3);
+			throw new ProgramException(ErrorMessagesUtils.MESSAGE3);
 		}
-		Report report =reportService.getReport(language);
+		final Report report =reportService.getReport(language);
 		return report;
 	}
 
