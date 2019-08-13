@@ -28,7 +28,7 @@ public class ReportDaoImpl implements ReportDao {
 	private JSONParser parser;
 
 	@Override
-	public int getBugs(String language) {
+	public int getBugs(final String language) {
 		final String url = serverUrl + "api/issues/search?types=BUG&languages=" + language;
 		final int count = makeApiRequest(url);
 
@@ -36,7 +36,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	@Override
-	public int getVulnerability(String language) {
+	public int getVulnerability(final String language) {
 		final String url = serverUrl + "api/issues/search?types=VULNERABILITY&languages=" + language;
 		final int count = makeApiRequest(url);
 
@@ -45,7 +45,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	@Override
-	public int getCodeSmell(String language) {
+	public int getCodeSmell(final String language) {
 		final String url = serverUrl + "api/issues/search?types=CODE_SMELL&languages=" + language;
 		final int count = makeApiRequest(url);
 
@@ -53,7 +53,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	@Override
-	public int getHotspot(String language) {
+	public int getHotspot(final String language) {
 		final String url = serverUrl + "api/issues/search?types=SECURITY_HOTSPOT&languages=" + language;
 		final int count = makeApiRequest(url);
 
@@ -61,7 +61,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	@Override
-	public int getMinor(String language) {
+	public int getMinor(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=MINOR&languages=" + language;
 		final int count = makeApiRequest(url);
 
@@ -69,7 +69,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	@Override
-	public int getCritical(String language) {
+	public int getCritical(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=CRITICAL&languages=" + language;
 		final int count = makeApiRequest(url);
 
@@ -77,7 +77,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	@Override
-	public int getInfo(String language) {
+	public int getInfo(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=INFO&languages=" + language;
 		final int count = makeApiRequest(url);
 
@@ -85,7 +85,7 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	@Override
-	public int getMajor(String language) {
+	public int getMajor(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=MAJOR&languages=" + language;
 		final int count = makeApiRequest(url);
 
@@ -93,14 +93,14 @@ public class ReportDaoImpl implements ReportDao {
 	}
 
 	@Override
-	public int getBlocker(String language) {
+	public int getBlocker(final String language) {
 		final String url = serverUrl + "api/issues/search?severities=BLOCKER&languages=" + language;
 		final int count = makeApiRequest(url);
 
 		return count;
 	}
 
-	private int makeApiRequest(String url) {
+	private int makeApiRequest(final String url) {
 		ResponseEntity<String> response = null;
 		try {
 			response = restTemplate.getForEntity(url, String.class);
