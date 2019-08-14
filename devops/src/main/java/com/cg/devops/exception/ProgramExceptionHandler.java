@@ -51,11 +51,5 @@ public class ProgramExceptionHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<>(exception, statusCode);
 	}
 
-	@ResponseStatus(value=HttpStatus.NOT_FOUND)
-	@ExceptionHandler(InvalidURL.class)
-	public final ResponseEntity<InvalidURL> notFound(WebRequest webRequest) {
-		InvalidURL ie = new InvalidURL("Invalid Request", "Content Not Available at this request");
-		return new ResponseEntity<>(ie, HttpStatus.NOT_FOUND);
-	}
 
 }

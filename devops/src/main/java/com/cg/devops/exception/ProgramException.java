@@ -12,8 +12,8 @@ public class ProgramException extends RuntimeException {
 	private HttpStatus title;
 	private static final long serialVersionUID = 1L;
 
-	public ProgramException(String errorMassage) {
-		super(errorMassage);
+	public ProgramException(String errorMessage) {
+		super(errorMessage);
 	}
 
 	public ProgramException(String errorMessage, HttpStatus httpStatus) {

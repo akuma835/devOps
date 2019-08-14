@@ -1,275 +1,31 @@
-2019-08-13 13:40:24.400  INFO 2300 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 13:40:24.999  INFO 2300 --- [restartedMain] com.example.devops.DevopsApplication     : Starting DevopsApplication on DIN13002277 with PID 2300 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 13:40:25.000  INFO 2300 --- [restartedMain] com.example.devops.DevopsApplication     : The following profiles are active: dev
-2019-08-13 13:40:25.977  INFO 2300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 13:40:25.978  INFO 2300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 13:40:25.979  INFO 2300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 13:40:26.049  INFO 2300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 13:40:26.051  INFO 2300 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1049 ms
-2019-08-13 13:40:26.230  WARN 2300 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportController': Unsatisfied dependency expressed through field 'reportService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportServiceImpl': Unsatisfied dependency expressed through field 'reportdao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportDaoImpl': Unsatisfied dependency expressed through field 'restTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2019-08-13 13:40:26.277  INFO 2300 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-08-13 13:40:26.320  INFO 2300 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-08-13 13:40:26.872 ERROR 2300 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field restTemplate in com.example.devops.dao.ReportDaoImpl required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
-
-2019-08-13 13:40:51.924  INFO 2300 --- [restartedMain] com.example.devops.DevopsApplication     : Starting DevopsApplication on DIN13002277 with PID 2300 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 13:40:51.924  INFO 2300 --- [restartedMain] com.example.devops.DevopsApplication     : The following profiles are active: dev
-2019-08-13 13:40:52.208  INFO 2300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 13:40:52.209  INFO 2300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 13:40:52.209  INFO 2300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 13:40:52.247  INFO 2300 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-08-13 13:40:52.247  INFO 2300 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 321 ms
-2019-08-13 13:40:52.257  WARN 2300 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportController': Unsatisfied dependency expressed through field 'reportService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportServiceImpl': Unsatisfied dependency expressed through field 'reportdao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportDaoImpl': Unsatisfied dependency expressed through field 'restTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2019-08-13 13:40:52.257  INFO 2300 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-08-13 13:40:52.261  INFO 2300 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-08-13 13:40:52.351 ERROR 2300 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field restTemplate in com.example.devops.dao.ReportDaoImpl required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
-
-2019-08-13 13:41:55.223  INFO 7360 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 7360 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 13:41:55.227  INFO 7360 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 13:41:55.259  INFO 7360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-08-13 13:41:55.260  INFO 7360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-08-13 13:41:56.843  INFO 7360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 13:41:56.862  INFO 7360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 13:41:56.863  INFO 7360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 13:41:56.939  INFO 7360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 13:41:56.939  INFO 7360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1679 ms
-2019-08-13 13:41:57.181  INFO 7360 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 13:41:57.347  INFO 7360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 13:41:57.398  INFO 7360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 13:41:57.400  INFO 7360 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 2.48 seconds (JVM running for 3.051)
-2019-08-13 13:42:06.972  INFO 7360 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 13:42:06.972  INFO 7360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-08-13 13:42:06.977  INFO 7360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2019-08-13 13:42:08.185  WARN 7360 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cg.devops.exception.ProgramException: Api request not available]
-2019-08-13 13:44:26.787  INFO 7360 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 13:44:26.999  INFO 7360 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 7360 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 13:44:26.999  INFO 7360 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 13:44:27.418  INFO 7360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 13:44:27.420  INFO 7360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 13:44:27.420  INFO 7360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 13:44:27.446  INFO 7360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 13:44:27.446  INFO 7360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 444 ms
-2019-08-13 13:44:27.505  INFO 7360 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 13:44:27.553  INFO 7360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 13:44:27.569  INFO 7360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 13:44:27.570  INFO 7360 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 0.621 seconds (JVM running for 153.213)
-2019-08-13 13:44:27.572  INFO 7360 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-08-13 13:44:29.685  INFO 7360 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-08-13 13:44:29.686  INFO 7360 --- [RMI TCP Connection(6)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 13:45:35.843  INFO 6328 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 6328 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 13:45:35.846  INFO 6328 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 13:45:35.877  INFO 6328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-08-13 13:45:35.877  INFO 6328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-08-13 13:45:36.909  INFO 6328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 13:45:36.928  INFO 6328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 13:45:36.929  INFO 6328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 13:45:37.019  INFO 6328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 13:45:37.019  INFO 6328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1142 ms
-2019-08-13 13:45:37.255  INFO 6328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 13:45:37.412  INFO 6328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 13:45:37.459  INFO 6328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 13:45:37.462  INFO 6328 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 1.905 seconds (JVM running for 2.509)
-2019-08-13 13:46:15.630  INFO 6328 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 13:46:15.631  INFO 6328 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-08-13 13:46:15.635  INFO 6328 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2019-08-13 13:50:02.369  WARN 6328 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cg.devops.exception.ProgramException: Api request not available]
-2019-08-13 13:51:36.812  WARN 6328 --- [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cg.devops.exception.ProgramException: Api request not available]
-2019-08-13 14:06:17.453  INFO 6328 --- [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-08-13 14:06:17.455  INFO 6328 --- [RMI TCP Connection(23)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 14:08:31.655  INFO 9516 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 9516 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 14:08:31.659  INFO 9516 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 14:08:31.691  INFO 9516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-08-13 14:08:31.691  INFO 9516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-08-13 14:08:32.715  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 14:08:32.736  INFO 9516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 14:08:32.736  INFO 9516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 14:08:32.832  INFO 9516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 14:08:32.832  INFO 9516 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1141 ms
-2019-08-13 14:08:33.045  INFO 9516 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 14:08:33.220  INFO 9516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 14:08:33.266  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 14:08:33.269  INFO 9516 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 1.906 seconds (JVM running for 2.439)
-2019-08-13 14:08:51.388  INFO 9516 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 14:08:51.388  INFO 9516 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-08-13 14:08:51.392  INFO 9516 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2019-08-13 14:59:07.100  INFO 9516 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 14:59:07.273  INFO 9516 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 9516 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 14:59:07.273  INFO 9516 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 14:59:07.577  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 14:59:07.578  INFO 9516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 14:59:07.578  INFO 9516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 14:59:07.599  INFO 9516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 14:59:07.600  INFO 9516 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 325 ms
-2019-08-13 14:59:07.675  INFO 9516 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 14:59:07.728  INFO 9516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 14:59:07.747  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 14:59:07.748  INFO 9516 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 0.514 seconds (JVM running for 3036.739)
-2019-08-13 14:59:07.749  INFO 9516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-08-13 14:59:14.682  INFO 9516 --- [RMI TCP Connection(55)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-08-13 14:59:14.686  INFO 9516 --- [RMI TCP Connection(55)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:15:15.779  INFO 5772 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 5772 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 15:15:15.781  INFO 5772 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 15:15:15.812  INFO 5772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-08-13 15:15:15.813  INFO 5772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-08-13 15:15:16.953  INFO 5772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 15:15:16.973  INFO 5772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 15:15:16.973  INFO 5772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 15:15:17.046  INFO 5772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 15:15:17.047  INFO 5772 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1234 ms
-2019-08-13 15:15:17.274  INFO 5772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:15:17.437  INFO 5772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 15:15:17.482  INFO 5772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 15:15:17.485  INFO 5772 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 1.993 seconds (JVM running for 2.604)
-2019-08-13 15:15:27.056  INFO 5772 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 15:15:27.057  INFO 5772 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-08-13 15:15:27.061  INFO 5772 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2019-08-13 15:19:16.909  INFO 5772 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-08-13 15:19:16.912  INFO 5772 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:29:30.193  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 9476 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 15:29:30.196  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 15:29:30.242  INFO 9476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-08-13 15:29:30.243  INFO 9476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-08-13 15:29:31.288  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 15:29:31.309  INFO 9476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 15:29:31.310  INFO 9476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 15:29:31.408  INFO 9476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 15:29:31.409  INFO 9476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1166 ms
-2019-08-13 15:29:31.616  INFO 9476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:29:31.760  INFO 9476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 15:29:31.825  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 15:29:31.829  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 1.97 seconds (JVM running for 2.517)
-2019-08-13 15:29:40.106  INFO 9476 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 15:29:40.107  INFO 9476 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-08-13 15:29:40.111  INFO 9476 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2019-08-13 15:35:07.337  INFO 9476 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:35:07.555  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 9476 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 15:35:07.555  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 15:35:07.874  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 15:35:07.875  INFO 9476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 15:35:07.875  INFO 9476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 15:35:07.897  INFO 9476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 15:35:07.897  INFO 9476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 340 ms
-2019-08-13 15:35:07.986  INFO 9476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:35:08.042  INFO 9476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 15:35:08.066  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 15:35:08.066  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 0.547 seconds (JVM running for 338.735)
-2019-08-13 15:35:08.071  INFO 9476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-08-13 15:36:26.552  INFO 9476 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 15:36:26.552  INFO 9476 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-08-13 15:36:26.556  INFO 9476 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2019-08-13 15:49:47.162  INFO 9476 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:49:47.388  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 9476 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 15:49:47.388  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 15:49:47.629  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 15:49:47.630  INFO 9476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 15:49:47.631  INFO 9476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 15:49:47.647  INFO 9476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 15:49:47.648  INFO 9476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 258 ms
-2019-08-13 15:49:47.694  INFO 9476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:49:47.734  INFO 9476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 15:49:47.751  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 15:49:47.752  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 0.393 seconds (JVM running for 1218.369)
-2019-08-13 15:49:47.754  INFO 9476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-08-13 15:49:53.917  INFO 9476 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 15:49:53.917  INFO 9476 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-08-13 15:49:53.922  INFO 9476 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2019-08-13 15:51:45.827  INFO 9476 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:51:46.015  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 9476 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 15:51:46.015  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 15:51:46.287  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 15:51:46.288  INFO 9476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 15:51:46.288  INFO 9476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 15:51:46.309  INFO 9476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 15:51:46.310  INFO 9476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 293 ms
-2019-08-13 15:51:46.359  INFO 9476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:51:46.393  INFO 9476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 15:51:46.410  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 15:51:46.410  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 0.417 seconds (JVM running for 1337.02)
-2019-08-13 15:51:46.412  INFO 9476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-08-13 15:54:02.738  INFO 9476 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:54:02.930  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 9476 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 15:54:02.931  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 15:54:03.180  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 15:54:03.182  INFO 9476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 15:54:03.182  INFO 9476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 15:54:03.205  INFO 9476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 15:54:03.205  INFO 9476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 273 ms
-2019-08-13 15:54:03.249  INFO 9476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 15:54:03.303  INFO 9476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 15:54:03.320  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 15:54:03.320  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 0.411 seconds (JVM running for 1473.922)
-2019-08-13 15:54:03.322  INFO 9476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-08-13 16:08:11.151  INFO 9476 --- [Thread-29] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 16:08:11.390  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 9476 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 16:08:11.390  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 16:08:11.602  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 16:08:11.605  INFO 9476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 16:08:11.605  INFO 9476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 16:08:11.629  INFO 9476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 16:08:11.629  INFO 9476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 236 ms
-2019-08-13 16:08:11.671  INFO 9476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 16:08:11.702  INFO 9476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 16:08:11.721  INFO 9476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 16:08:11.722  INFO 9476 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 0.354 seconds (JVM running for 2322.273)
-2019-08-13 16:08:11.723  INFO 9476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-08-13 16:14:49.540  INFO 9476 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 16:14:49.541  INFO 9476 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-08-13 16:14:49.542  INFO 9476 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2019-08-13 16:53:24.220  INFO 9476 --- [RMI TCP Connection(87)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-08-13 16:53:24.273  INFO 9476 --- [RMI TCP Connection(87)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 17:27:28.296  INFO 5460 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 5460 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
-2019-08-13 17:27:28.298  INFO 5460 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
-2019-08-13 17:27:28.335  INFO 5460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-08-13 17:27:28.335  INFO 5460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-08-13 17:27:29.576  INFO 5460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-08-13 17:27:29.600  INFO 5460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-08-13 17:27:29.600  INFO 5460 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-08-13 17:27:29.696  INFO 5460 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-08-13 17:27:29.696  INFO 5460 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1361 ms
-2019-08-13 17:27:29.914  INFO 5460 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 17:27:30.064  INFO 5460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-08-13 17:27:30.121  INFO 5460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-08-13 17:27:30.125  INFO 5460 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 2.239 seconds (JVM running for 2.742)
-2019-08-13 17:27:35.866  INFO 5460 --- [http-nio-8081-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 17:27:35.867  INFO 5460 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-08-13 17:27:35.872  INFO 5460 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2019-08-13 17:27:36.094  WARN 5460 --- [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer]
-2019-08-13 19:11:34.511  WARN 5460 --- [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer]
-2019-08-13 19:35:43.681  WARN 5460 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer]
-2019-08-13 19:49:50.832  INFO 5460 --- [RMI TCP Connection(147)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-08-13 19:49:50.835  INFO 5460 --- [RMI TCP Connection(147)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 12:16:13.635  INFO 10392 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 10392 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
+2019-08-14 12:16:13.689  INFO 10392 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
+2019-08-14 12:16:13.974  INFO 10392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 12:16:13.974  INFO 10392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 12:16:15.857  INFO 10392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-08-14 12:16:15.911  INFO 10392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 12:16:15.911  INFO 10392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-14 12:16:16.068  INFO 10392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 12:16:16.068  INFO 10392 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2094 ms
+2019-08-14 12:16:16.412  INFO 10392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 12:16:16.673  INFO 10392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 12:16:16.786  INFO 10392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-14 12:16:16.791  INFO 10392 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 4.039 seconds (JVM running for 5.478)
+2019-08-14 12:24:25.356  INFO 10392 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 12:24:26.112  INFO 10392 --- [restartedMain] com.cg.devops.DevopsApplication          : Starting DevopsApplication on DIN13002277 with PID 10392 (C:\Users\trainee\git\devOps\devops\target\classes started by trainee in C:\Users\trainee\git\devOps\devops)
+2019-08-14 12:24:26.112  INFO 10392 --- [restartedMain] com.cg.devops.DevopsApplication          : The following profiles are active: dev
+2019-08-14 12:24:26.424  INFO 10392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-08-14 12:24:26.426  INFO 10392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 12:24:26.426  INFO 10392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-14 12:24:26.454  INFO 10392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 12:24:26.454  INFO 10392 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 340 ms
+2019-08-14 12:24:26.522  INFO 10392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 12:24:26.564  INFO 10392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 12:24:26.587  INFO 10392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-14 12:24:26.587  INFO 10392 --- [restartedMain] com.cg.devops.DevopsApplication          : Started DevopsApplication in 0.506 seconds (JVM running for 495.246)
+2019-08-14 12:24:26.590  INFO 10392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-08-14 12:29:15.145  INFO 10392 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 12:29:15.146  INFO 10392 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 12:29:15.159  INFO 10392 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-08-14 14:31:19.420  INFO 10392 --- [RMI TCP Connection(138)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-14 14:31:19.424  INFO 10392 --- [RMI TCP Connection(138)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

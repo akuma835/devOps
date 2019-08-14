@@ -38,9 +38,52 @@ public class ReportDaoImplTest {
 
 	
 	@Test(expected = ProgramException.class)
-	public void test() {
+	public void testGetBugs() {
 		reportDao.getBugs("java");
 	}
+	
+	@Test(expected = ProgramException.class)
+	public void testGetVulnerability() {
+		reportDao.getVulnerability("java");
+	}
+	
+		
+	@Test(expected = ProgramException.class)
+	public void testGetCodeSmell() {
+		reportDao.getCodeSmell("java");
+	}
+	
+	@Test(expected = ProgramException.class)
+	public void testGetHotspot() {
+		reportDao.getHotspot("java");
+	}
+	
+	@Test(expected = ProgramException.class)
+	public void testGetMinor() {
+		reportDao.getMinor("java");
+	}
+	@Test(expected = ProgramException.class)
+	public void testGetCritical() {
+		reportDao.getCritical("java");
+	}
+	
+	@Test(expected = ProgramException.class)
+	public void testGetInfo() {
+		reportDao.getInfo("java");
+	}
+	
+	@Test(expected = ProgramException.class)
+	public void testGetMajor() {
+		reportDao.getMajor("java");
+	}
+	
+	@Test(expected = ProgramException.class)
+	public void testGetBlocker() {
+		reportDao.getBlocker("java");
+	}
+	
+	
+	
 	
 
 }

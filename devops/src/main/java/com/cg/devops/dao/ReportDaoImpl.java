@@ -140,7 +140,7 @@ public class ReportDaoImpl implements ReportDao {
 			throw new ProgramException(ErrorMessagesUtils.MESSAGE4);
 		}
 		
-		return (int) jsonObject.get("total");
+		return (int) (long)jsonObject.get("total");
 	}
 
 }

@@ -19,13 +19,14 @@ import mockit.MockUp;
 import mockit.integration.junit4.JMockit;
 
 /**
- * @author trainee
- *
+ * @author Sarika Yadav
+ *Service method tests
  */
 
 @Configuration
 @ComponentScan(basePackages = { "com.cg.devops.service" })
 class SpringTestContext {
+	
 	@Bean
 	public ReportService getReportService() {
 		return new ReportServiceImpl();
