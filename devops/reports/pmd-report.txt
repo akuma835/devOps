@@ -1,0 +1,264 @@
+src/main/java/com/cg/devops/AppConfig.java:12:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/AppConfig.java:12:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/AppConfig.java:12:	CommentRequired: Header comments are required
+src/main/java/com/cg/devops/AppConfig.java:12:	CommentRequired: Header comments are required
+src/main/java/com/cg/devops/AppConfig.java:15:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/AppConfig.java:15:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/AppConfig.java:20:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/AppConfig.java:20:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/AppConfig.java:26:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/AppConfig.java:26:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/AppConfig.java:31:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/AppConfig.java:31:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/DevopsApplication.java:7:	CommentRequired: Header comments are required
+src/main/java/com/cg/devops/DevopsApplication.java:7:	CommentRequired: Header comments are required
+src/main/java/com/cg/devops/DevopsApplication.java:7:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/cg/devops/DevopsApplication.java:7:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/cg/devops/DevopsApplication.java:9:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/DevopsApplication.java:9:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/DevopsApplication.java:9:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/cg/devops/DevopsApplication.java:9:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/Report.java:12:	DataClass: The class 'Report' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=6, WMC=7)
+src/main/java/com/cg/devops/beans/Report.java:12:	DataClass: The class 'Report' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=6, WMC=7)
+src/main/java/com/cg/devops/beans/Report.java:15:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/Report.java:15:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/Report.java:16:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/Report.java:16:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/Report.java:17:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/Report.java:17:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/Report.java:22:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/cg/devops/beans/Report.java:22:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/cg/devops/beans/Report.java:22:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/cg/devops/beans/Report.java:22:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/cg/devops/beans/Report.java:29:	MethodArgumentCouldBeFinal: Parameter 'severityCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/Report.java:29:	MethodArgumentCouldBeFinal: Parameter 'severityCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/Report.java:37:	MethodArgumentCouldBeFinal: Parameter 'typeCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/Report.java:37:	MethodArgumentCouldBeFinal: Parameter 'typeCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/Report.java:45:	MethodArgumentCouldBeFinal: Parameter 'date' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/Report.java:45:	MethodArgumentCouldBeFinal: Parameter 'date' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:11:	DataClass: The class 'SeverityCount' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=10, WMC=11)
+src/main/java/com/cg/devops/beans/SeverityCount.java:11:	DataClass: The class 'SeverityCount' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=10, WMC=11)
+src/main/java/com/cg/devops/beans/SeverityCount.java:14:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:14:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:15:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:15:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:16:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:16:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:17:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:17:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:18:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:18:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/SeverityCount.java:23:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/cg/devops/beans/SeverityCount.java:23:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/cg/devops/beans/SeverityCount.java:23:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/cg/devops/beans/SeverityCount.java:23:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/cg/devops/beans/SeverityCount.java:30:	MethodArgumentCouldBeFinal: Parameter 'blockerCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:30:	MethodArgumentCouldBeFinal: Parameter 'blockerCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:38:	MethodArgumentCouldBeFinal: Parameter 'minorCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:38:	MethodArgumentCouldBeFinal: Parameter 'minorCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:46:	MethodArgumentCouldBeFinal: Parameter 'majorCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:46:	MethodArgumentCouldBeFinal: Parameter 'majorCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:54:	MethodArgumentCouldBeFinal: Parameter 'criticalCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:54:	MethodArgumentCouldBeFinal: Parameter 'criticalCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:62:	MethodArgumentCouldBeFinal: Parameter 'infoCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/SeverityCount.java:62:	MethodArgumentCouldBeFinal: Parameter 'infoCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/TypeCount.java:11:	DataClass: The class 'TypeCount' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=8, WMC=9)
+src/main/java/com/cg/devops/beans/TypeCount.java:11:	DataClass: The class 'TypeCount' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=8, WMC=9)
+src/main/java/com/cg/devops/beans/TypeCount.java:14:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/TypeCount.java:14:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/TypeCount.java:15:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/TypeCount.java:15:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/TypeCount.java:15:	LongVariable: Avoid excessively long variable names like vulnerabilityCount
+src/main/java/com/cg/devops/beans/TypeCount.java:15:	LongVariable: Avoid excessively long variable names like vulnerabilityCount
+src/main/java/com/cg/devops/beans/TypeCount.java:16:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/TypeCount.java:16:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/TypeCount.java:17:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/TypeCount.java:17:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/beans/TypeCount.java:22:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/cg/devops/beans/TypeCount.java:22:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/cg/devops/beans/TypeCount.java:22:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/cg/devops/beans/TypeCount.java:22:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/cg/devops/beans/TypeCount.java:30:	MethodArgumentCouldBeFinal: Parameter 'bugsCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/TypeCount.java:30:	MethodArgumentCouldBeFinal: Parameter 'bugsCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/TypeCount.java:38:	LongVariable: Avoid excessively long variable names like vulnerabilityCount
+src/main/java/com/cg/devops/beans/TypeCount.java:38:	LongVariable: Avoid excessively long variable names like vulnerabilityCount
+src/main/java/com/cg/devops/beans/TypeCount.java:38:	MethodArgumentCouldBeFinal: Parameter 'vulnerabilityCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/TypeCount.java:38:	MethodArgumentCouldBeFinal: Parameter 'vulnerabilityCount' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/TypeCount.java:46:	MethodArgumentCouldBeFinal: Parameter 'codeSmell' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/TypeCount.java:46:	MethodArgumentCouldBeFinal: Parameter 'codeSmell' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/TypeCount.java:54:	MethodArgumentCouldBeFinal: Parameter 'securityHotspot' is not assigned and could be declared final
+src/main/java/com/cg/devops/beans/TypeCount.java:54:	MethodArgumentCouldBeFinal: Parameter 'securityHotspot' is not assigned and could be declared final
+src/main/java/com/cg/devops/controller/ReportController.java:22:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/controller/ReportController.java:22:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/controller/ReportController.java:25:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/controller/ReportController.java:25:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/controller/ReportController.java:25:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/controller/ReportController.java:25:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/controller/ReportController.java:39:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'report'
+src/main/java/com/cg/devops/controller/ReportController.java:39:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'report'
+src/main/java/com/cg/devops/dao/ReportDao.java:16:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getBugs': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:16:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getBugs': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:24:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getVulnerability': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:24:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getVulnerability': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:32:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getCodeSmell': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:32:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getCodeSmell': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:40:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getHotspot': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:40:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getHotspot': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:48:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getMinor': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:48:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getMinor': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:56:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getCritical': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:56:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getCritical': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:64:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getInfo': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:64:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getInfo': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:72:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getMajor': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:72:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getMajor': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:80:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getBlocker': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDao.java:80:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getBlocker': the method is declared in an interface type
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:7:	UnusedImports: Avoid unused imports such as 'org.springframework.http.HttpStatus'
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:7:	UnusedImports: Avoid unused imports such as 'org.springframework.http.HttpStatus'
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:23:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:23:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:28:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:28:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:28:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:28:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:34:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:34:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:40:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:40:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:132:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'response' (lines '132'-'135').
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:132:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'response' (lines '132'-'135').
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:133:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'jsonObject' (lines '133'-'136').
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:133:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'jsonObject' (lines '133'-'136').
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:136:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'jsonObject' (lines '136'-'143').
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:136:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'jsonObject' (lines '136'-'143').
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:138:	PreserveStackTrace: New exception is thrown in catch block, original stack trace may be lost
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:138:	PreserveStackTrace: New exception is thrown in catch block, original stack trace may be lost
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:140:	PreserveStackTrace: New exception is thrown in catch block, original stack trace may be lost
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:140:	PreserveStackTrace: New exception is thrown in catch block, original stack trace may be lost
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:142:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/cg/devops/dao/ReportDaoImpl.java:142:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:9:	DataClass: The class 'ErrorMessagePattern' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=8, WMC=10)
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:9:	DataClass: The class 'ErrorMessagePattern' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=8, WMC=10)
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:11:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:11:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:12:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:12:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:13:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:13:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:14:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:14:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:20:	MethodArgumentCouldBeFinal: Parameter 'date' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:20:	MethodArgumentCouldBeFinal: Parameter 'date' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:28:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:28:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:36:	MethodArgumentCouldBeFinal: Parameter 'messageDetails' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:36:	MethodArgumentCouldBeFinal: Parameter 'messageDetails' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:44:	MethodArgumentCouldBeFinal: Parameter 'requestCode' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:44:	MethodArgumentCouldBeFinal: Parameter 'requestCode' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	MethodArgumentCouldBeFinal: Parameter 'date' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	MethodArgumentCouldBeFinal: Parameter 'date' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	MethodArgumentCouldBeFinal: Parameter 'messageDetails' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	MethodArgumentCouldBeFinal: Parameter 'messageDetails' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	MethodArgumentCouldBeFinal: Parameter 'requestCode' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:48:	MethodArgumentCouldBeFinal: Parameter 'requestCode' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:56:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:56:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:56:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/cg/devops/exception/ErrorMessagePattern.java:56:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/cg/devops/exception/ErrorMessagesUtils.java:11:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagesUtils.java:11:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagesUtils.java:12:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagesUtils.java:12:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagesUtils.java:13:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ErrorMessagesUtils.java:13:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/InvalidURL.java:7:	CommentRequired: Header comments are required
+src/main/java/com/cg/devops/exception/InvalidURL.java:7:	CommentRequired: Header comments are required
+src/main/java/com/cg/devops/exception/InvalidURL.java:7:	DataClass: The class 'InvalidURL' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=4, WMC=5)
+src/main/java/com/cg/devops/exception/InvalidURL.java:7:	DataClass: The class 'InvalidURL' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=4, WMC=5)
+src/main/java/com/cg/devops/exception/InvalidURL.java:10:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/InvalidURL.java:10:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/InvalidURL.java:11:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/InvalidURL.java:11:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/InvalidURL.java:15:	MethodArgumentCouldBeFinal: Parameter 'errorTitle' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/InvalidURL.java:15:	MethodArgumentCouldBeFinal: Parameter 'errorTitle' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/InvalidURL.java:18:	MissingOverride: The method 'getMessage()' is missing an @Override annotation.
+src/main/java/com/cg/devops/exception/InvalidURL.java:18:	MissingOverride: The method 'getMessage()' is missing an @Override annotation.
+src/main/java/com/cg/devops/exception/InvalidURL.java:21:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/InvalidURL.java:21:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/InvalidURL.java:24:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/InvalidURL.java:24:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/InvalidURL.java:24:	MethodArgumentCouldBeFinal: Parameter 'errorTitle' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/InvalidURL.java:24:	MethodArgumentCouldBeFinal: Parameter 'errorTitle' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/InvalidURL.java:24:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/InvalidURL.java:24:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramException.java:12:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/exception/ProgramException.java:12:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/exception/ProgramException.java:12:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ProgramException.java:12:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/exception/ProgramException.java:15:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ProgramException.java:15:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ProgramException.java:15:	MethodArgumentCouldBeFinal: Parameter 'errorMassage' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramException.java:15:	MethodArgumentCouldBeFinal: Parameter 'errorMassage' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramException.java:19:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ProgramException.java:19:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ProgramException.java:19:	MethodArgumentCouldBeFinal: Parameter 'errorMessage' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramException.java:19:	MethodArgumentCouldBeFinal: Parameter 'errorMessage' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramException.java:19:	MethodArgumentCouldBeFinal: Parameter 'httpStatus' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramException.java:19:	MethodArgumentCouldBeFinal: Parameter 'httpStatus' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:22:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:22:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:25:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:25:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:25:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:25:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:25:	MethodArgumentCouldBeFinal: Parameter 'webRequest' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:25:	MethodArgumentCouldBeFinal: Parameter 'webRequest' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:25:	ShortVariable: Avoid variables with short names like e
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:25:	ShortVariable: Avoid variables with short names like e
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:26:	LocalVariableCouldBeFinal: Local variable 'error' could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:26:	LocalVariableCouldBeFinal: Local variable 'error' could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:40:	MethodArgumentCouldBeFinal: Parameter 'pe' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:40:	MethodArgumentCouldBeFinal: Parameter 'pe' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:40:	ShortVariable: Avoid variables with short names like pe
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:40:	ShortVariable: Avoid variables with short names like pe
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:41:	MethodArgumentCouldBeFinal: Parameter 'webRequest' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:41:	MethodArgumentCouldBeFinal: Parameter 'webRequest' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:48:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:48:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:48:	LocalVariableCouldBeFinal: Local variable 'exception' could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:48:	LocalVariableCouldBeFinal: Local variable 'exception' could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:54:	UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only element
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:54:	UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only element
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:56:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:56:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:56:	MethodArgumentCouldBeFinal: Parameter 'webRequest' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:56:	MethodArgumentCouldBeFinal: Parameter 'webRequest' is not assigned and could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:57:	LocalVariableCouldBeFinal: Local variable 'ie' could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:57:	LocalVariableCouldBeFinal: Local variable 'ie' could be declared final
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:57:	ShortVariable: Avoid variables with short names like ie
+src/main/java/com/cg/devops/exception/ProgramExceptionHandler.java:57:	ShortVariable: Avoid variables with short names like ie
+src/main/java/com/cg/devops/service/ReportService.java:18:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getReport': the method is declared in an interface type
+src/main/java/com/cg/devops/service/ReportService.java:18:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getReport': the method is declared in an interface type
+src/main/java/com/cg/devops/service/ReportServiceImpl.java:19:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/service/ReportServiceImpl.java:19:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/cg/devops/service/ReportServiceImpl.java:22:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/service/ReportServiceImpl.java:22:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/cg/devops/service/ReportServiceImpl.java:22:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/service/ReportServiceImpl.java:22:	CommentRequired: Field comments are required
+src/main/java/com/cg/devops/service/ReportServiceImpl.java:73:	LongVariable: Avoid excessively long variable names like vulnerabilityCount
+src/main/java/com/cg/devops/service/ReportServiceImpl.java:73:	LongVariable: Avoid excessively long variable names like vulnerabilityCount
+src/test/java/com/example/demo/DevopsApplicationTests.java:10:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/demo/DevopsApplicationTests.java:10:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/demo/DevopsApplicationTests.java:10:	CommentRequired: Header comments are required
+src/test/java/com/example/demo/DevopsApplicationTests.java:10:	CommentRequired: Header comments are required
+src/test/java/com/example/demo/DevopsApplicationTests.java:13:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/demo/DevopsApplicationTests.java:13:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/demo/DevopsApplicationTests.java:13:	JUnitTestsShouldIncludeAssert: JUnit tests should include assert() or fail()
+src/test/java/com/example/demo/DevopsApplicationTests.java:13:	JUnitTestsShouldIncludeAssert: JUnit tests should include assert() or fail()
+src/test/java/com/example/demo/DevopsApplicationTests.java:13:	UncommentedEmptyMethodBody: Document empty method body
+src/test/java/com/example/demo/DevopsApplicationTests.java:13:	UncommentedEmptyMethodBody: Document empty method body

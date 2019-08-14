@@ -2,6 +2,12 @@ package com.cg.devops.beans;
 
 import java.io.Serializable;
 
+/**
+ * 
+ * @author Team1
+ * @viewedBy certainSomeone Bean Class TypeCount
+ *
+ */
 public class TypeCount implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -10,6 +16,9 @@ public class TypeCount implements Serializable {
 	private int codeSmell;
 	private int securityHotspot;
 
+	/**
+	 * Default Constructor TypeCount
+	 */
 	public TypeCount() {
 
 	}
